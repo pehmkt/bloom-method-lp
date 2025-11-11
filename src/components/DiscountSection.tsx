@@ -47,9 +47,9 @@ const DiscountSection = () => {
           <Button 
             onClick={scrollToOffer}
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-white text-base md:text-lg py-5 md:py-6 px-6 md:px-8 rounded-full shadow-soft w-full md:w-auto"
+            className="bg-primary hover:bg-primary/90 text-white text-base md:text-lg py-5 md:py-6 px-8 rounded-full shadow-soft w-full md:w-auto"
           >
-            <Heart className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+            <Heart className="w-4 h-4 md:w-5 md:h-5 mr-2 flex-shrink-0" />
             Acessar Agora
           </Button>
         </div>

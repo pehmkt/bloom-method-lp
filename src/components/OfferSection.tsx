@@ -35,10 +35,10 @@ const OfferSection = () => {
 
             <Button 
               size="lg"
-              className="w-full bg-primary hover:bg-primary/90 text-white text-lg py-8 rounded-full shadow-soft mb-8"
+              className="w-full bg-primary hover:bg-primary/90 text-white text-base md:text-lg py-6 md:py-8 rounded-full shadow-soft mb-8"
             >
-              <Gift className="w-6 h-6 mr-2" />
-              Garantir Meu Acesso Agora
+              <Gift className="w-5 h-5 md:w-6 md:h-6 mr-2 flex-shrink-0" />
+              <span className="whitespace-normal leading-tight">Garantir Meu Acesso Agora</span>
             </Button>
           </div>
 
