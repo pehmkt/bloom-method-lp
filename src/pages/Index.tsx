@@ -9,8 +9,28 @@ import GuaranteeSection from "@/components/GuaranteeSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import MobileFixedCTA from "@/components/MobileFixedCTA";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Add a fake history entry for back button detection
+    window.history.pushState(null, "", window.location.href);
+
+    const handlePopState = () => {
+      // Redirect to back redirect page
+      navigate("/oferta-especial");
+    };
+
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, [navigate]);
+
   return (
     <main className="min-h-screen">
       <FixedTopBanner />
