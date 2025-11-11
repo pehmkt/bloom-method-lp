@@ -25,7 +25,7 @@ const OfferSection = () => {
                 De <span className="line-through">R$ 297</span>{" "}
                 <span className="bg-primary text-white text-sm font-bold px-3 py-1 rounded-full ml-2">90% OFF</span>
               </p>
-              <p className="text-5xl md:text-6xl font-bold text-primary mb-2">
+              <p className="text-5xl md:text-6xl font-bold text-primary mb-2 whitespace-nowrap">
                 R$ 29,90
               </p>
               <p className="text-sm text-muted-foreground">
