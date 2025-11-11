@@ -23,7 +23,11 @@ const Index = () => {
     const handlePopState = () => {
       if (!exitIntentTriggered) {
         exitIntentTriggered = true;
-        window.location.href = "/oferta-especial";
+        // Re-push state to keep the document alive, then redirect
+        try {
+          window.history.pushState({ page: "main" }, "", currentUrl);
+        } catch {}
+        window.location.replace("/oferta-especial");
       }
     };
 
