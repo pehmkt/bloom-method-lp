@@ -1,6 +1,5 @@
 import FixedTopBanner from "@/components/FixedTopBanner";
 import HeroSection from "@/components/HeroSection";
-import VideoSection from "@/components/VideoSection";
 import DiscountSection from "@/components/DiscountSection";
 import ForWhoSection from "@/components/ForWhoSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -16,7 +15,6 @@ const Index = () => {
     <main className="min-h-screen">
       <FixedTopBanner />
       <HeroSection />
-      <VideoSection />
       <DiscountSection />
       <ForWhoSection />
       <TestimonialsSection />
