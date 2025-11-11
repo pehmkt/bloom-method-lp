@@ -20,28 +20,17 @@ const Index = () => {
     window.history.pushState({ page: "main" }, "", currentUrl);
 
     // Handle back button (works on mobile and desktop)
-    const handlePopState = (e: PopStateEvent) => {
+    const handlePopState = () => {
       if (!exitIntentTriggered) {
         exitIntentTriggered = true;
         window.location.href = "/oferta-especial";
       }
     };
 
-    // Exit intent for desktop - when mouse leaves from top of page
-    const handleMouseLeave = (e: MouseEvent) => {
-      // Only trigger if mouse is leaving from the top and moving upward
-      if (e.clientY <= 0 && !exitIntentTriggered) {
-        exitIntentTriggered = true;
-        window.location.href = "/oferta-especial";
-      }
-    };
-
     window.addEventListener("popstate", handlePopState);
-    document.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
       window.removeEventListener("popstate", handlePopState);
-      document.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
