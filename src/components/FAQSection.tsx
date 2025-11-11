@@ -8,49 +8,49 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "O Método das 4 Fases funciona para qualquer idade?",
+      question: "Como funciona o Método das 4 Fases?",
       answer:
-        "Sim! O método foi desenvolvido com base em estudos científicos sobre metabolismo e pode ser aplicado por mulheres de todas as idades. O programa se adapta ao seu ritmo e necessidades individuais.",
-    },
-    {
-      question: "Preciso fazer exercícios pesados?",
-      answer:
-        "Não. O método foca na reprogramação metabólica através da alimentação estratégica. Exercícios leves são bem-vindos, mas não são obrigatórios para obter resultados.",
+        "O método divide o processo de emagrecimento em 4 etapas progressivas: Desintoxica, Ativa, Reequilibra e Mantém. Cada fase tem duração específica e objetivos claros para reprogramar seu metabolismo de forma natural e sustentável.",
     },
     {
       question: "Quanto tempo leva para ver resultados?",
       answer:
-        "A maioria das mulheres começa a notar diferenças já na primeira semana. O programa completo dura 40 dias, período em que você pode perder até 21kg, dependendo do seu organismo.",
+        "A maioria das mulheres começa a notar diferenças já nas primeiras semanas. O programa completo dura 40 dias, período em que você pode perder até 21kg, dependendo do seu organismo e dedicação.",
     },
     {
-      question: "E se eu não conseguir seguir perfeitamente?",
+      question: "Preciso fazer dietas restritivas?",
       answer:
-        "O método é flexível e compreensivo. Você terá suporte e orientações para adaptar o programa à sua rotina. Ninguém precisa ser perfeito para ter resultados!",
+        "Não! O método não envolve dietas extremas ou restrições malucas. Você vai aprender a comer de forma estratégica, respeitando seu corpo e acelerando naturalmente seu metabolismo.",
     },
     {
-      question: "Como funciona a garantia?",
+      question: "O acesso é vitalício mesmo?",
       answer:
-        "Você tem 7 dias corridos para testar todo o conteúdo. Se não ficar satisfeita por qualquer motivo, basta solicitar o reembolso total do seu investimento. Sem perguntas, sem burocracia.",
+        "Sim! Você paga uma única vez e tem acesso para sempre a todo o conteúdo, incluindo todas as atualizações futuras. Não há mensalidades ou cobranças recorrentes.",
+    },
+    {
+      question: "E se eu não gostar do método?",
+      answer:
+        "Você tem 7 dias de garantia incondicional. Se não ficar satisfeita, basta enviar um e-mail e devolvemos 100% do seu investimento, sem perguntas.",
     },
   ];
 
   return (
-    <section className="py-16 px-4 bg-gradient-soft">
+    <section className="py-16 px-4 bg-background">
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
-          ❓ Perguntas Frequentes
+          Perguntas Frequentes
         </h2>
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-white rounded-2xl shadow-card px-6 border-none"
+              className="bg-white rounded-2xl shadow-card px-6 border border-border"
             >
-              <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-primary py-6">
+              <AccordionTrigger className="text-left text-base font-semibold text-foreground hover:no-underline py-6">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-6 text-sm">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
