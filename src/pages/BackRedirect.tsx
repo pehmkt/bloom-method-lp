@@ -79,7 +79,7 @@ const BackRedirect = () => {
             className="w-full bg-primary hover:bg-primary/90 text-white text-base md:text-lg py-6 md:py-8 rounded-full shadow-soft mb-4"
           >
             <Gift className="w-5 h-5 md:w-6 md:h-6 mr-2 flex-shrink-0" />
-            Quero meu acesso por R$ 14,90 agora
+            Garantir Agora
           </Button>
 
           {/* Guarantee */}
