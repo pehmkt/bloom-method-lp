@@ -19,33 +19,29 @@ const Index = () => {
     const currentUrl = window.location.href;
     window.history.pushState({ page: "main" }, "", currentUrl);
 
-    // Handle back button
+    // Handle back button (works on mobile and desktop)
     const handlePopState = (e: PopStateEvent) => {
       if (!exitIntentTriggered) {
         exitIntentTriggered = true;
-        e.preventDefault();
         window.location.href = "/oferta-especial";
       }
     };
 
-    // Handle beforeunload (when user tries to close tab or navigate away)
-    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-      if (!exitIntentTriggered) {
+    // Exit intent for desktop - when mouse leaves from top of page
+    const handleMouseLeave = (e: MouseEvent) => {
+      // Only trigger if mouse is leaving from the top and moving upward
+      if (e.clientY <= 0 && !exitIntentTriggered) {
         exitIntentTriggered = true;
-        e.preventDefault();
-        // Redirect to special offer
-        setTimeout(() => {
-          window.location.href = "/oferta-especial";
-        }, 0);
+        window.location.href = "/oferta-especial";
       }
     };
 
     window.addEventListener("popstate", handlePopState);
-    window.addEventListener("beforeunload", handleBeforeUnload);
+    document.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
       window.removeEventListener("popstate", handlePopState);
-      window.removeEventListener("beforeunload", handleBeforeUnload);
+      document.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
