@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center space-y-4">
           <p className="text-sm">
-            © 2024 Método das 4 Fases. Todos os direitos reservados.
+            © 2024 Método 4 Fases. Todos os direitos reservados.
           </p>
           <div className="flex justify-center gap-6 text-sm">
             <a href="#" className="hover:underline transition-opacity">

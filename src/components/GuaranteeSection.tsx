@@ -14,7 +14,7 @@ const GuaranteeSection = () => {
           <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
             <p>
               Você tem <span className="font-bold text-foreground">1 semana inteira</span> para
-              testar o Método das 4 Fases. Se por qualquer motivo você não ficar satisfeita,
+              testar o Método 4 Fases. Se por qualquer motivo você não ficar satisfeita,
               basta enviar um único e-mail e devolveremos{" "}
               <span className="font-bold text-foreground">100% do seu investimento</span>,
               sem perguntas, sem burocracia.

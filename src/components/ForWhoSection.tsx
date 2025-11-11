@@ -36,7 +36,7 @@ const ForWhoSection = () => {
     <section className="py-16 px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
-          O Método das 4 Fases é pra você que:
+          O Método 4 Fases é pra você que:
         </h2>
         <div className="space-y-4">
           {benefits.map((benefit, index) => {

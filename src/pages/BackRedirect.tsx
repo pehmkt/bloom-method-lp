@@ -23,7 +23,7 @@ const BackRedirect = () => {
         {/* Subheadline */}
         <div className="bg-white rounded-2xl md:rounded-3xl shadow-card p-6 md:p-8 mb-6 animate-fade-in">
           <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
-            Ela acredita que toda mulher merece ter acesso ao <span className="font-bold">Método das 4 Fases</span>, mesmo que o investimento inicial seja um obstáculo.
+            Ela acredita que toda mulher merece ter acesso ao <span className="font-bold">Método 4 Fases</span>, mesmo que o investimento inicial seja um obstáculo.
           </p>
           <p className="text-base md:text-lg text-foreground leading-relaxed">
             Então, <span className="font-bold text-primary">somente nesta página</span>, você pode garantir o acesso completo ao programa por um valor simbólico:
@@ -95,7 +95,7 @@ const BackRedirect = () => {
             Essa é uma <span className="font-bold text-primary">condição única</span> e não ficará disponível novamente — é a <span className="font-bold">última chance</span> de entrar com 50% de desconto extra.
           </p>
           <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
-            O Método das 4 Fases já transformou a rotina de <span className="font-bold">milhares de mulheres</span>, e talvez hoje seja o seu dia de começar a sua própria mudança.
+            O Método 4 Fases já transformou a rotina de <span className="font-bold">milhares de mulheres</span>, e talvez hoje seja o seu dia de começar a sua própria mudança.
           </p>
           <p className="text-base md:text-lg text-primary font-bold">
             💖 Você tem 7 dias de garantia total.

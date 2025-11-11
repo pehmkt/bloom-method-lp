@@ -12,7 +12,7 @@ const DiscountSection = () => {
       <div className="container mx-auto max-w-md md:max-w-3xl">
         <div className="bg-white rounded-2xl md:rounded-3xl shadow-card p-6 md:p-12 text-center space-y-4 md:space-y-6 animate-fade-in">
           <p className="text-sm md:text-lg leading-relaxed text-foreground px-2">
-            Baseado em estudos de metabolismo cíclico, o Método das 4 Fases conduz
+            Baseado em estudos de metabolismo cíclico, o Método 4 Fases conduz
             seu corpo por um processo natural de <span className="font-semibold text-foreground">transformação:</span>
           </p>
           <div className="flex flex-wrap justify-center gap-2 md:gap-3">
@@ -37,7 +37,7 @@ const DiscountSection = () => {
         <div className="mt-8 md:mt-12 text-center space-y-4 md:space-y-6 px-2">
           <p className="text-base md:text-xl leading-relaxed text-foreground">
             Durante o mês da <span className="font-bold text-primary">Black Friday</span>, o acesso completo ao{" "}
-            <span className="font-bold">Método das 4 Fases</span> está com desconto especial — de <span className="line-through text-muted-foreground">R$ 297</span> por apenas{" "}
+            <span className="font-bold">Método 4 Fases</span> está com desconto especial — de <span className="line-through text-muted-foreground">R$ 297</span> por apenas{" "}
             <span className="font-bold text-primary text-2xl md:text-3xl">R$ 29,90</span>.
           </p>
           <p className="text-sm md:text-lg text-muted-foreground leading-relaxed">

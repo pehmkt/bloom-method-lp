@@ -13,7 +13,7 @@ const OfferSection = () => {
           <div className="text-center mb-8">
             <div className="bg-pink-light p-6 rounded-3xl mb-8">
               <h2 className="text-2xl md:text-3xl font-bold mb-2 text-foreground">
-                Acesso Vitalício ao Método das 4 Fases
+                Acesso Vitalício ao Método 4 Fases
               </h2>
               <p className="text-base text-muted-foreground">
                 + Todos os Bônus Exclusivos

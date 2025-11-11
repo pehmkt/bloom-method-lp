@@ -8,7 +8,7 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Como funciona o Método das 4 Fases?",
+      question: "Como funciona o Método 4 Fases?",
       answer:
         "O método divide o processo de emagrecimento em 4 etapas progressivas: Desintoxica, Ativa, Reequilibra e Mantém. Cada fase tem duração específica e objetivos claros para reprogramar seu metabolismo de forma natural e sustentável.",
     },
