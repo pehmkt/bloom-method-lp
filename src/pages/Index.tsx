@@ -10,26 +10,44 @@ import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import MobileFixedCTA from "@/components/MobileFixedCTA";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Index = () => {
-  const navigate = useNavigate();
-
   useEffect(() => {
-    // Add a fake history entry for back button detection
-    window.history.pushState(null, "", window.location.href);
+    let exitIntentTriggered = false;
 
-    const handlePopState = () => {
-      // Redirect to back redirect page
-      navigate("/oferta-especial");
+    // Push a new state to enable back button detection
+    const currentUrl = window.location.href;
+    window.history.pushState({ page: "main" }, "", currentUrl);
+
+    // Handle back button
+    const handlePopState = (e: PopStateEvent) => {
+      if (!exitIntentTriggered) {
+        exitIntentTriggered = true;
+        e.preventDefault();
+        window.location.href = "/oferta-especial";
+      }
+    };
+
+    // Handle beforeunload (when user tries to close tab or navigate away)
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (!exitIntentTriggered) {
+        exitIntentTriggered = true;
+        e.preventDefault();
+        // Redirect to special offer
+        setTimeout(() => {
+          window.location.href = "/oferta-especial";
+        }, 0);
+      }
     };
 
     window.addEventListener("popstate", handlePopState);
+    window.addEventListener("beforeunload", handleBeforeUnload);
 
     return () => {
       window.removeEventListener("popstate", handlePopState);
+      window.removeEventListener("beforeunload", handleBeforeUnload);
     };
-  }, [navigate]);
+  }, []);
 
   return (
     <main className="min-h-screen">
