@@ -31,12 +31,12 @@ const BackRedirect = () => {
         </div>
 
         {/* Offer Card */}
-        <div className="bg-white rounded-2xl md:rounded-3xl shadow-card p-6 md:p-10 mb-6 relative overflow-hidden border-2 border-primary animate-scale-in">
-          <div className="absolute -top-2 -right-2 md:top-4 md:right-4 bg-primary text-white px-3 py-1 md:px-4 md:py-2 rounded-full font-bold text-xs md:text-sm shadow-lg rotate-12 z-10">
+        <div className="bg-white rounded-2xl md:rounded-3xl shadow-card p-6 md:p-10 mb-6 relative overflow-visible border-2 border-primary animate-scale-in">
+          <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-primary text-white px-3 py-1 md:px-4 md:py-2 rounded-full font-bold text-xs md:text-sm shadow-lg rotate-0 md:rotate-12 z-10">
             50% OFF Extra
           </div>
 
-          <div className="text-center mb-6 pt-6 md:pt-0">
+          <div className="text-center mb-6 pt-8 md:pt-0">
             <p className="text-muted-foreground mb-2">
               De <span className="line-through">R$ 297</span> → por <span className="line-through">R$ 29,90</span>
             </p>
