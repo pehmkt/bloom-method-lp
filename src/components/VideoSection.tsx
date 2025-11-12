@@ -13,7 +13,7 @@ const VideoSection = () => {
   }, []);
 
   return (
-    <section className="py-8 px-4 bg-background">
+    <section className="py-0 pb-8 px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
         <div className="bg-white rounded-3xl shadow-card p-6 md:p-8">
           <div 
