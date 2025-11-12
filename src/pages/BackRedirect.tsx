@@ -7,6 +7,10 @@ const BackRedirect = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const handleCheckout = () => {
+    window.location.href = "https://pay.lowify.com.br/checkout?product_id=sCg4AT";
+  };
+
   return (
     <main className="min-h-screen bg-background py-8 px-4">
       <div className="container mx-auto max-w-2xl">
@@ -75,6 +79,7 @@ const BackRedirect = () => {
           </div>
 
           <Button 
+            onClick={handleCheckout}
             size="lg"
             className="w-full bg-primary hover:bg-primary/90 text-white text-base md:text-lg py-6 md:py-8 rounded-full shadow-soft mb-4"
           >

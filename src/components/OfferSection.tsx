@@ -2,6 +2,10 @@ import { Button } from "./ui/button";
 import { Gift, Check } from "lucide-react";
 
 const OfferSection = () => {
+  const handleCheckout = () => {
+    window.location.href = "https://pay.lowify.com.br/checkout?product_id=sCg4AT";
+  };
+
   return (
     <section id="offer-section" className="py-8 px-4 bg-background">
       <div className="container mx-auto max-w-2xl">
@@ -34,6 +38,7 @@ const OfferSection = () => {
             </div>
 
             <Button 
+              onClick={handleCheckout}
               size="lg"
               className="w-full bg-primary hover:bg-primary/90 text-white text-base md:text-lg py-6 md:py-8 rounded-full shadow-soft mb-8"
             >

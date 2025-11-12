@@ -15,9 +15,8 @@ const MobileFixedCTA = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToOffer = () => {
-    const offerSection = document.getElementById("offer-section");
-    offerSection?.scrollIntoView({ behavior: "smooth" });
+  const handleCheckout = () => {
+    window.location.href = "https://pay.lowify.com.br/checkout?product_id=sCg4AT";
   };
 
   if (!isVisible) return null;
@@ -25,7 +24,7 @@ const MobileFixedCTA = () => {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white border-t border-border shadow-soft p-4">
       <Button
-        onClick={scrollToOffer}
+        onClick={handleCheckout}
         size="lg"
         className="w-full bg-gradient-primary text-white hover:opacity-90 transition-all shadow-soft rounded-full text-base py-5"
       >
