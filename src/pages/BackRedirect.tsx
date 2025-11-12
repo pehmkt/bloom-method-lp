@@ -8,7 +8,7 @@ const BackRedirect = () => {
   }, []);
 
   const handleCheckout = () => {
-    window.location.href = "https://pay.lowify.com.br/checkout?product_id=sCg4AT";
+    window.location.href = "https://pay.lowify.com.br/checkout?product_id=4MWWly";
   };
 
   return (
