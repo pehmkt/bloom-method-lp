@@ -17,16 +17,6 @@ const HeroSection = () => {
         {/* Video Section */}
         <div className="mb-6 md:mb-8">
           <div className="bg-white rounded-2xl md:rounded-3xl shadow-card p-4 md:p-8">
-            <div className="aspect-video bg-pink-light rounded-xl md:rounded-2xl flex items-center justify-center mb-3 md:mb-4">
-              <div className="text-center space-y-3 md:space-y-4">
-                <div className="w-16 h-16 md:w-20 md:h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-                  <Sparkles className="w-8 h-8 md:w-10 md:h-10 text-primary" />
-                </div>
-                <p className="text-sm md:text-base text-muted-foreground">
-                  Vídeo em breve
-                </p>
-              </div>
-            </div>
             <p className="text-center text-xs md:text-sm text-muted-foreground italic px-2">
               Assista até o final para entender por que esse método tem transformado tantas mulheres.
             </p>
