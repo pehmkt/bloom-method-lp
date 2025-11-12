@@ -23,7 +23,7 @@ const BonusSection = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-background">
+    <section className="py-8 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <div className="inline-block bg-pink-light px-6 py-3 rounded-full mb-6">

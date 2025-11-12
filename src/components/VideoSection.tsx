@@ -13,15 +13,18 @@ const VideoSection = () => {
   }, []);
 
   return (
-    <section className="py-16 px-4 bg-background">
+    <section className="py-8 px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
         <div className="bg-white rounded-3xl shadow-card p-6 md:p-8">
           <div 
-            className="rounded-2xl"
+            className="rounded-2xl mb-4"
             dangerouslySetInnerHTML={{
               __html: '<vturb-smartplayer id="vid-6913e15ba8ec6cb788b51241" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>'
             }}
           />
+          <p className="text-center text-sm text-muted-foreground italic">
+            Assista até o final para entender por que esse método tem transformado tantas mulheres.
+          </p>
         </div>
       </div>
     </section>

@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-background">
+    <section className="py-8 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
           Veja o resultado de algumas mulheres:

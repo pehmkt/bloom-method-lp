@@ -2,9 +2,9 @@ import { Sparkles } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="pt-20 pb-8 px-4 bg-background">
+    <section className="pt-20 pb-4 px-4 bg-background">
       <div className="container mx-auto max-w-md md:max-w-4xl">
-        <div className="text-center mb-6 md:mb-8 animate-fade-in">
+        <div className="text-center mb-4 md:mb-6 animate-fade-in">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground mb-4 md:mb-6 px-2">
             Perca até <span className="text-primary">21kg em 40 dias</span> com o Método 4 Fases
           </h1>

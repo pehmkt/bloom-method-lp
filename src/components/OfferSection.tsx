@@ -3,7 +3,7 @@ import { Gift, Check } from "lucide-react";
 
 const OfferSection = () => {
   return (
-    <section id="offer-section" className="py-16 px-4 bg-background">
+    <section id="offer-section" className="py-8 px-4 bg-background">
       <div className="container mx-auto max-w-2xl">
         <div className="bg-white rounded-3xl shadow-card p-8 md:p-12 relative overflow-hidden border-2 border-border">
           <div className="absolute top-6 right-6 bg-primary text-white px-5 py-2 rounded-full font-bold text-sm shadow-lg rotate-12">

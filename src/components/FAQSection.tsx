@@ -35,7 +35,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-background">
+    <section className="py-8 px-4 bg-background">
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
           Perguntas Frequentes
