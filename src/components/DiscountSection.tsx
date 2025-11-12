@@ -2,8 +2,9 @@ import { Button } from "./ui/button";
 import { Heart } from "lucide-react";
 
 const DiscountSection = () => {
-  const handleCheckout = () => {
-    window.location.href = "https://pay.lowify.com.br/checkout?product_id=sCg4AT";
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById("offer-section");
+    offerSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -44,7 +45,7 @@ const DiscountSection = () => {
             que já transformaram milhares de mulheres.
           </p>
           <Button 
-            onClick={handleCheckout}
+            onClick={scrollToOffer}
             size="lg"
             className="bg-primary hover:bg-primary/90 text-white text-base md:text-lg py-5 md:py-6 px-8 rounded-full shadow-soft w-full md:w-auto"
           >
